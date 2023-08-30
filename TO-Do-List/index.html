@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* Add styles for btn element and to strike through the li elements with a class 'checked' */
+      .checked {
+        text-decoration: line-through;
+      }
+
+      .header {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #myInput {
+        border: none;
+        width: 75%;
+        padding: 10px;
+      }
+
+      .addBtn {
+        padding: 10px;
+        width: 20%;
+        background: #d9d9d9;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="myDIV" class="header">
+      <h2 style="margin: 5px">My To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title..." />
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+  </body>
+</html>
+<script src="./index.js"></script>
